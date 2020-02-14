@@ -1,1 +1,1 @@
-web: java -jar build/libs/BookStore-0.0.1-SNAPSHOT.jar
+web: java -jar build/libs/BookStore-1.0.jar
