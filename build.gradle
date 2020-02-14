@@ -23,32 +23,26 @@ repositories {
 }
 
 dependencies {
-//	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-//	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.2.RELEASE'
-//	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.2.2.RELEASE', ext: 'pom'
-//	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.2.2.RELEASE'
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.2.2.RELEASE'
-//	// https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
-//	compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.30'
-//	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
-//	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
-//	compileOnly 'org.projectlombok:lombok'
-////	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-//	annotationProcessor 'org.projectlombok:lombok'
+	// https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
+	compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.30'
+	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
+	compileOnly 'org.projectlombok:lombok'
+//	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-//	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
 	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
-//	runtimeOnly 'org.postgresql:postgresql'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	runtimeOnly 'org.postgresql:postgresql'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
